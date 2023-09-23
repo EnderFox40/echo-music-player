@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download File</title>
+</head>
+<body>
+    <script>
+        // URL към файла, който искате да изтеглите
+        const fileUrl = 'Echo Music Player (64-bit).msi';
+
+        // Име на файла след изтегляне
+        const fileName = 'Echo Music Player (64-bit).msi';
+
+        // Създайте връзка с href към URL-а на файла
+        const downloadLink = document.createElement('a');
+        downloadLink.href = fileUrl;
+
+        // Задайте атрибута download с името на файла
+        downloadLink.download = fileName;
+
+        // Натиснете връзката автоматично
+        downloadLink.click();
+        
+    </script>
+</body>
+</html>
